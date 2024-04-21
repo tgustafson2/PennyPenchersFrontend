@@ -134,3 +134,15 @@
 .tc-search {
   width:90%
 }
+
+.tc-red-text {
+  color: #ae1313;
+}
+
+.tc-blue-text {
+  color: #2f15cf;
+}
+
+.tc-yellow-text {
+  color: #f09d20;
+}
