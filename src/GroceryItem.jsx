@@ -8,10 +8,10 @@ const [inCart, setInCart] = useState(false);
 
   return (
     <>
-      <li>
-        <div class="inline-block left-align">{item.ItemName}</div>
-        <div class="right-align w3-small">{item.ChainName}</div>
-        <div class="right-align w3-small">${item.ItemCost} @</div>
+      <li class="tc-grid-container">
+        <div class="left-align">{item.ItemName}</div>
+        <div class="w3-small right-text">${item.ItemCost} @</div>
+        <div class="w3-small left-align">{item.ChainName}</div>
       </li>
     </>
   )

@@ -116,3 +116,13 @@
 .tc-no-bottom-margin {
   margin-bottom: 0;
 }
+
+.tc-grid-container {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+}
+
+.right-text {
+  text-align: right;
+}
