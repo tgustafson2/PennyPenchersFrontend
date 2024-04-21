@@ -28,6 +28,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url("assets/background_icons.png");
+  background-size: 200%;
 }
 
 h1 {
