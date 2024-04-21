@@ -8,12 +8,11 @@ const [inCart, setInCart] = useState(false);
 
   return (
     <>
-        
-      <p>{item.ItemName}</p>
-      <p>{item.ItemCost}</p>
-      <p>{item.ChainName}</p>
-        {inCart && <span>&#10003;</span>}
-        {!inCart && <input type='radio' onClick={() =>setInCart(true)}></input>}
+      <li>
+        <div class="inline-block left-align">{item.ItemName}</div>
+        <div class="right-align w3-small">{item.ChainName}</div>
+        <div class="right-align w3-small">${item.ItemCost} @</div>
+      </li>
     </>
   )
 }
