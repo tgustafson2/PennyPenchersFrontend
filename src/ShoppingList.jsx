@@ -1,14 +1,19 @@
 import { useState } from 'react'
 import './App.css'
+import GroceryItem from './GroceryItem.jsx'
 
 function ShoppingList(props) {
-//   const [count, setCount] = useState(0)
+    const [listItems, setListItems] = useState(props.groceries);
+    
 
   return (
     <>
-      <div>
-
-      </div>
+        
+        {listItems.map( item =>{
+                let id = crypto.randomUUID();
+                console.log(item);
+                return(<GroceryItem key={id} item = {item} />)
+            })}
     
     </>
   )
