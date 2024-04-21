@@ -8,12 +8,11 @@ const [inCart, setInCart] = useState(false);
 
   return (
     <>
-        
-      <p>{item.ItemName}</p>
-      <p>{item.ItemCost}</p>
-      <p>{item.ChainName}</p>
-        {inCart && <span>&#10003;</span>}
-        {!inCart && <input type='radio' onClick={() =>setInCart(true)}></input>}
+      <li class="tc-grid-container">
+        <div class="left-align">{item.ItemName}</div>
+        <div class="w3-small right-text">${item.ItemCost} @</div>
+        <div class="w3-small left-align">{item.ChainName}</div>
+      </li>
     </>
   )
 }

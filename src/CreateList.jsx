@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import ListItem from './ListItem';
+import './w3.css';
 
 function CreateList(props) {
 //   const [count, setCount] = useState(0)
@@ -49,17 +50,18 @@ function onPress(event){
 
   return (
     <>
-    <h1>Add items to grocery list</h1>
+    <h1 class="list-font tc-green-text">Tiny Cart</h1>
+    <p class="left-align">Add an Item</p>
       <search>
         <form onSubmit={(e) => addItemToList(e)}>
-            <input value={item}
+            <input class="tc-green-border w3-round-large tc-white" value={item}
             onChange={e =>setItem(e.target.value)}
             type="text"
             id="name"/>
-            <button>Add Item</button>
+            <button class="w3-button w3-circle tc-green-background circle-button">+</button>
         </form>
       </search>
-        <ul>
+        <ul class="w3-ul w3-hoverable list-font">
             {listItems.length === 0 && "No Items"}
             {listItems.map( item =>{
                 let id = crypto.randomUUID();
@@ -67,7 +69,7 @@ function onPress(event){
                 return(<ListItem key={id} itemName = {item} />)
             })}
         </ul>
-        {listItems.length>0 && <button onClick={onPress}>Get Prices</button>}
+        {listItems.length>0 && <button className="bottom-align" onClick={onPress}>Get Prices</button>}
     </>
   )
 }

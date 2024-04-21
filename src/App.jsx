@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div class="bottom-container">
         {!listExists && <CreateList parentCallback = {getList}/>}
         {listExists && <ShoppingList groceries={groceryList} />}
       </div>
