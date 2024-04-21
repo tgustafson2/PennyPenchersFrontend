@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import './ShoppingList';
 
-function App() {
-  const [count, setCount] = useState(0)
-  
+function ShoppingList(props) {
+//   const [count, setCount] = useState(0)
+
   return (
     <>
       <div>
@@ -15,4 +14,4 @@ function App() {
   )
 }
 
-export default App
+export default ShoppingList
