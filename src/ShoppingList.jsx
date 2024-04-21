@@ -8,7 +8,7 @@ function ShoppingList(props) {
 
   return (
     <>
-        <h1 class="list-font tc-green-text">Tiny Cart</h1>
+        <img class="tc-logo"src="/src/assets/logo.png" alt="Tiny Cart"></img>
         <p class="left-align tc-no-bottom-margin">Price Check</p>
         <ul class="w3-ul w3-hoverable list-font tc-ul">
         {listItems.map( item =>{

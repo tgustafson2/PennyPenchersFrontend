@@ -65,7 +65,7 @@
 }
 
 .circle-button {
-  margin:1em;
+  margin:0.5m;
 }
 
 .left-align {
@@ -125,4 +125,12 @@
 
 .right-text {
   text-align: right;
+}
+
+.tc-logo {
+  width: 50%;
+}
+
+.tc-search {
+  width:90%
 }
