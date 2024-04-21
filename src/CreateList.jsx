@@ -60,7 +60,7 @@ function onPress(event){
             id="name"/>
         </form>
       </search>
-        <ul class="w3-ul w3-hoverable list-font">
+        <ul class="w3-ul w3-hoverable list-font w3-margin-top">
             {listItems.length === 0 && "No Items"}
             {listItems.map( item =>{
                 let id = crypto.randomUUID();
